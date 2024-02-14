@@ -46,9 +46,9 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(139, 184);
             listBox1.TabIndex = 0;
-            listBox1.DragDrop += listBox1_DragDrop;
-            listBox1.DragEnter += listBox1_DragEnter;
-            listBox1.MouseDown += listBox1_MouseDown;
+            listBox1.DragDrop += listBoxLeft_DragDrop;
+            listBox1.DragEnter += listBoxLeft_DragEnter;
+            listBox1.MouseDown += listBoxLeft_MouseDown;
             // 
             // listBox2
             // 
@@ -60,9 +60,9 @@
             listBox2.Name = "listBox2";
             listBox2.Size = new Size(139, 184);
             listBox2.TabIndex = 1;
-            listBox2.DragDrop += listBox2_DragDrop;
-            listBox2.DragEnter += listBox2_DragEnter;
-            listBox2.MouseDown += listBox2_MouseDown;
+            listBox2.DragDrop += listBoxRight_DragDrop;
+            listBox2.DragEnter += listBoxRight_DragEnter;
+            listBox2.MouseDown += listBoxRight_MouseDown;
             // 
             // button1
             // 
