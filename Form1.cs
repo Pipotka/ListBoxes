@@ -11,12 +11,7 @@ namespace ListBoxes
             listBox2.AllowDrop = true;
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonMoveToTheRight(object sender, EventArgs e)
         {
             if (listBox1.SelectedIndex >= 0)
             {
@@ -25,12 +20,7 @@ namespace ListBoxes
             }
         }
 
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void ButtonMoveAllToTheRight(object sender, EventArgs e)
         {
             if (listBox1.Items.Count > 0)
             {
@@ -42,7 +32,7 @@ namespace ListBoxes
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ButtonMoveAllToTheLeft(object sender, EventArgs e)
         {
             if (listBox2.Items.Count >= 0)
             {
@@ -54,7 +44,7 @@ namespace ListBoxes
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ButtonMoveToTheLeft(object sender, EventArgs e)
         {
             if (listBox2.SelectedIndex >= 0)
             {

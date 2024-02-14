@@ -46,7 +46,6 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(139, 184);
             listBox1.TabIndex = 0;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             listBox1.DragDrop += listBox1_DragDrop;
             listBox1.DragEnter += listBox1_DragEnter;
             listBox1.MouseDown += listBox1_MouseDown;
@@ -61,7 +60,6 @@
             listBox2.Name = "listBox2";
             listBox2.Size = new Size(139, 184);
             listBox2.TabIndex = 1;
-            listBox2.SelectedIndexChanged += listBox2_SelectedIndexChanged;
             listBox2.DragDrop += listBox2_DragDrop;
             listBox2.DragEnter += listBox2_DragEnter;
             listBox2.MouseDown += listBox2_MouseDown;
@@ -74,7 +72,7 @@
             button1.TabIndex = 2;
             button1.Text = ">";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += ButtonMoveToTheRight;
             // 
             // button2
             // 
@@ -84,7 +82,7 @@
             button2.TabIndex = 3;
             button2.Text = ">>";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += ButtonMoveAllToTheRight;
             // 
             // button3
             // 
@@ -94,7 +92,7 @@
             button3.TabIndex = 4;
             button3.Text = "<<";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            button3.Click += ButtonMoveAllToTheLeft;
             // 
             // button4
             // 
@@ -104,7 +102,7 @@
             button4.TabIndex = 5;
             button4.Text = "<";
             button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button4.Click += ButtonMoveToTheLeft;
             // 
             // Form1
             // 
