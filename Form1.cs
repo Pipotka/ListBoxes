@@ -53,7 +53,7 @@ namespace ListBoxes
             }
         }
 
-        private void listBox1_DragDrop(object sender, DragEventArgs e)
+        private void listBoxLeft_DragDrop(object sender, DragEventArgs e)
         {
             if (!listBox1.Items.Contains(e.Data.GetData(DataFormats.Text)))
             {
@@ -62,12 +62,12 @@ namespace ListBoxes
             }
         }
 
-        private void listBox1_MouseDown(object sender, MouseEventArgs e)
+        private void listBoxLeft_MouseDown(object sender, MouseEventArgs e)
         {
             listBox2.DoDragDrop(listBox1.SelectedItem.ToString(), DragDropEffects.Move);
         }
 
-        private void listBox2_DragEnter(object sender, DragEventArgs e)
+        private void listBoxRight_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Text))
             {
@@ -79,7 +79,7 @@ namespace ListBoxes
             }
         }
 
-        private void listBox2_DragDrop(object sender, DragEventArgs e)
+        private void listBoxRight_DragDrop(object sender, DragEventArgs e)
         {
             if (!listBox2.Items.Contains(e.Data.GetData(DataFormats.Text)))
             {
@@ -88,7 +88,7 @@ namespace ListBoxes
             }
         }
 
-        private void listBox1_DragEnter(object sender, DragEventArgs e)
+        private void listBoxLeft_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Text))
             {
@@ -100,7 +100,7 @@ namespace ListBoxes
             }
         }
 
-        private void listBox2_MouseDown(object sender, MouseEventArgs e)
+        private void listBoxRight_MouseDown(object sender, MouseEventArgs e)
         {
             listBox1.DoDragDrop(listBox2.SelectedItem.ToString(), DragDropEffects.Move);
         }
